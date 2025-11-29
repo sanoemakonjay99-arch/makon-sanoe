@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-content">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Discover my work and skills as a frontend developer.</p>
+        </div>
+    </section>
+
+    <!-- Profile section -->
+    <section class="profile-section" id="about">
+        <div class="profile-card">
+            <img src="ms.jpg" alt="Profile picture" class="profile-pic">
+            <h1 class="profile-name">Makonjay A. Sanoe</h1>
+            <p class="profile-short">Frontend developer • Designer • Problem solver</p>
+            <button id="openProfile" class="btn">Read More</button>
+
+        </div>
+    </section>
+           <!-------social-icon-->
+           <div class="social">
+            <p>Contact Me</p>
+    <div class="social-icons">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-linkedin-in"></i>
+        <i class="fa-brands fa-github"></i>
+        <i class="fa-brands fa-instagram"></i>
+    </div>
+</div>
+        <!----About me-->
+        <section class="experience" id="home">
+        <h2 class="section-title">About Me</h2>
+        <h3>My Experience</h3>
+        <div class="experience-info">
+         
+            <div class="grid">
+                <div class="grid-card">
+                    <i class="fa-solid fa-code"></i>
+                    <span>Frontend developer </span>
+                    <h3>6 months</h3>
+                    <p>Building responsive websites, and webapps, writing HTML, CSS, and<br> javascript. 
+                        staying updated with new technologies, creating prototypes and demos.!</p>
+                </div>
+                <div class="grid-card">
+                    <i class="fa-brands fa-windows"></i>
+                    <span>Software Engineer</span>
+                    <h3>2 years experiences</h3>
+                    <p>designining and developing software system, writing codes in languages like,<br> Java 
+                    Python, C++ etc. maintaining and updating existing software, ensuring software quality and security.</p>
+                </div>
+                <div class="grid-card">
+                    <i class="fa-solid fa-pencil"></i>
+                    <span>Graphic Designer</span>
+                    <h3>3 years experiences</h3>
+                    <p>As a graphic designer I design websites and apps, create logo and brand <br>identities
+                    making business cards and flyer, designing magazines, newspapers, and books,<br>
+                     collaborating with clients and copywriters, making packageing and labels.</p>
+                </div>
+                <div class="grid-card">
+                   <i class="fa-solid fa-bars"></i>
+                    <span>System Designer</span>
+                    <h3>1 year experience</h3>
+                    <p>Designing system architecture and infrastructure, Troubleshooting<br>
+                    system issues, staying updated with new techonologies, designing <br>
+                    databases and data storage solutions</p>
+                </div>
+            </div>
+            <img src="ms.jpg" alt="Makonjay A. Sanoe">
+        </div>
+        </section>  
+        <!---project-->  
+        <section id="project"class="project">
+            <h2 class="section-title">My Project</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <img src="ss.png" alt="">
+                    <h3>E-commerce</h3>
+                    <p>I built an E-commerce websites aiming to provide a convenient <br>online 
+                    shopping experience for customers. User can browse and purchase various product.</p>
+                    <div class="btn-group">
+                    <div class="btn">Read More</div>
+                    <div class="btn">Github Repo</div>
+                    </div>
+                </div>
+                 <div class="project-card">
+                    <img src="ss.png" alt="">
+                    <h3>Hospital Management System</h3>
+                    <p>Provide efficient healthcare administration for medical institutions.<br>
+                    User can manage patient records, track appointments and billing, <br>utilize
+                online payment options and enjoy easy navigation on both desktop and mobile devices.</p>
+                 <div class="btn-group">
+                    <div class="btn">Read More</div>
+                    <div class="btn">Github Repo</div>
+                </div>
+                </div>
+                 <div class="project-card">
+                    <img src="ss.png" alt="">
+                    <h3>School Management System</h3>
+                    <p>Provide efficient administration for educational institutions. User<br>
+                    can manage student's enrollment, track attendance and grades utilize online payment options.</p>
+                    <div class="btn-group">
+                    <div class="btn">Read More</div>
+                    <div class="btn">Github Repo</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- Contact section -->
+     <section class="Contact" id="contact">
+    <div class="input-box">
+        <h2 class="section-title">Contact Me</h2>
+        <form id="contactForm" class="input" novalidate>
+            <input type="email" id="contactEmail" placeholder="Email address" required>
+            <i class="fa-solid fa-message" aria-hidden="true"></i>
+        </form>
+        <button id="submitBtn" class="btn">Submit</button>
+    </div>
+</section>
+
+    <!-- Confirm submit modal -->
+    <div id="submitConfirm" class="modal" aria-hidden="true" role="dialog" aria-labelledby="confirmTitle" aria-modal="true">
+        <div class="modal-content confirm">
+            <h2 id="confirmTitle">Are you sure you want to submit this?</h2>
+            <p class="confirm-desc">Please confirm that you want to send your contact details.</p>
+            <div class="confirm-actions">
+                <button id="confirmYes" class="btn confirm-yes">Yes</button>
+                <button id="confirmNo" class="btn confirm-no">No</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- small toast -->
+    <div id="submitToast" class="toast" role="status" aria-live="polite">Submitted successfully</div>
+
+     <footer>
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#project">Project</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+        <p class="copyright">@ All Right Reserved | Makonjay A. Sanoe</p>
+     </footer>
+
+    <!-- Modal / Popup with details -->
+    <div id="profileModal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="modalTitle">
+        <div class="modal-content">
+            <button class="modal-close" id="closeModal" aria-label="Close details">&times;</button>
+            <h2 id="modalTitle">Details about me</h2>
+            <p> Hi — I'm Makonjay A. Sanoe.</p>
+            <p>I am a Frontend developer</p>
+            <p>I live in Monrovia, Liberia.</p>
+            <a href="mailto:sanoemakonjay99@gmail.com">Contact me</a> <!-- Fixed mailto link -->
+            <ul class="details-list">
+                <li><strong>Location:</strong> Monrovia, Liberia</li>
+                <li><strong>Skills:</strong> HTML, CSS, JS, React</li>
+                <li><strong>Availability:</strong> Open to freelance & remote work</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="javascript.js"></script>
+</body>
+</html>
